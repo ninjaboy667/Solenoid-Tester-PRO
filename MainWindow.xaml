@@ -1,0 +1,26 @@
+﻿<Window x:Class="Solenoidtest4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Solenoidtest4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="562.5" Width="1000">
+    <Grid>
+        <!-- Add a Button -->
+        <Button Content="Click Me" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"/>
+
+        <!-- Add a DataGrid (Table) with specified columns -->
+<DataGrid x:Name="myDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,70,0,0" Height="450" Width="900" HorizontalScrollBarVisibility="Disabled">
+    <DataGrid.Columns>
+        <DataGridTextColumn Header="Step" Binding="{Binding Step}" Width="100"/>
+        <DataGridTextColumn Header="Command" Binding="{Binding Command}" Width="100"/>
+        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="100"/>
+        <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="100"/>
+        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="500"/>
+    </DataGrid.Columns>
+</DataGrid>
+
+
+    </Grid>
+</Window>
